@@ -1,0 +1,25 @@
+.confirmation-container{
+    position: absolute;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.confirmtext{
+    position: absolute;
+    font-weight: bold;
+    bottom: 120px;
+}
+
+.no-button{
+    margin: 0 auto 4px 4px;
+}
+
+.yes-button{
+    margin: 0 4px 4px auto
+}

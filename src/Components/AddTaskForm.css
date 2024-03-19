@@ -1,0 +1,55 @@
+.addtaskform{
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    width: 25%; 
+    height: 30%; 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtaskform > *{
+    margin: 4px;
+}
+
+.taskinput{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.taskinput span{
+    margin: 0 0 auto 0;
+    font-size: 22px;
+}
+
+.taskinput input{
+    font-size: 20px;
+    width: 60%;
+    height: 50%;
+    margin: auto 0 auto 0 ;
+}
+
+.urgency{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.urgency span{
+    font-size: 22px;
+}
+
+.urgency label{
+    margin: 2px;
+}
+
+.urgency-input{
+    margin: 0 2px 0 0 
+}
+
+.submit-button{
+    width: 30%; 
+    margin: auto auto 2px auto;
+}

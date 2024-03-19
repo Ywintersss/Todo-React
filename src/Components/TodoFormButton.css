@@ -1,0 +1,17 @@
+.AddTask-Button{
+    position: relative;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto 5px 5px auto;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    transition: 0.1s ease;
+}
+
+.AddTask-Button:hover{
+    background: white;
+    color: black;
+}
