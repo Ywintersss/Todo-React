@@ -2,6 +2,7 @@ import React from "react";
 import './AddTaskForm.css'
 
 function AddTaskForm({onSubmit}){
+    //onSubmit is the addTask() function
     const handleSubmit = (e) =>{
         //prevents browser from reloading
         e.preventDefault()

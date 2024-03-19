@@ -10,16 +10,18 @@ function App() {
   const [showAddTaskForm, setShowAddTaskForm] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [tasks, setTasks] = useState([])
+  //stores the id of the task that triggered the confirmation page
   const [taskID, settaskID] = useState(0)
 
   const addtask = (taskData) => {
+    //... takes old tasks array, makes a copy of all the items into the new array
     setTasks([...tasks, taskData])
     setShowAddTaskForm(false)
   }
 
   const deltask = (indexToRemove) => {
     setTasks((prevTasks) =>{
-      //
+      //() => no need {} when dealing with singular expressions
       //filter(function(value, index, arr), thisvalue)
       return prevTasks.filter((_, index) => 
         index !== indexToRemove
@@ -36,6 +38,8 @@ function App() {
     settaskID(index)
   }
 
+  //for debugging purposes
+  //React is asynchronous
   useEffect(() => {
     console.log(tasks);
   }, [tasks]); // Log tasks whenever it changes
